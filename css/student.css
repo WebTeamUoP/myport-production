@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans|Open+Sans&display=swap');
+
+:root {
+  --font-body: 'Open Sans', sans-serif;
+  --font-header: 'Encode Sans Expanded', sans-serif;
+
+  /* Standard */
+  --teal-dark: #007370;
+  /* Hover & dropdowns */
+  --teal-light: #009a96;
+  /* dropdowns hoverstate*/
+  --teal-lightest: #00cdc8;
+
+  /* For links */
+  --blue-dark: #0078b4;
+  /* Links hover*/
+  --blue-light: #00a0ff;
+}
+
+/* Elements */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-header);
+  color: var(--teal-dark);
+}
+
+a {
+  color: var(--blue-dark);
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--blue-light);
+  text-decoration: none;
+}
+
+input {
+  border-radius: 0;
+}
+
+
+/* Components */
+/* Top Nav*/
+nav.navbar,
+nav.navbar .dropdown-menu {
+  background-color: var(--teal-dark);
+}
+
+nav.navbar .dropdown-menu a {
+	padding: 1rem 3rem;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus,
+.navbar .navbar-nav > .dropdown.open > a,
+.navbar .dropdown-menu > li > a:hover {
+  background-color: var(--teal-light);
+}
+/* /Top Nav*/
+
+/* KB Search */
+.btn.btn-primary {
+  border-radius: 0;
+  background-color: var(--teal-dark);
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--teal-light);
+}
+/* /KB Search */
+
+/* Main content */
+.icon-image {
+  background-color: var(--teal-dark);
+}
+
+.icon:hover .icon-image {
+  background-color: var(--teal-light);
+}
+/* /Main content */
