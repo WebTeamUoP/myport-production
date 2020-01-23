@@ -15,9 +15,20 @@
   --blue-dark: #0078b4;
   /* Links hover*/
   --blue-light: #00a0ff;
+
+  --grey: #abaaaa;
+
+  /* Global style */
+  --purple: #621360;
+  --purple-dark: #3c023c;
 }
 
 /* Elements */
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+}
+
 h1,
 h2,
 h3,
@@ -39,7 +50,43 @@ a:hover {
 input {
   border-radius: 0;
 }
+/* /Elements */
 
+/* Utils */
+.flexContainer {
+  display: flex;
+}
+
+.container>.flexContainer>.flexItem {
+
+  flex-grow: 1;
+  padding: 24px 15px;
+}
+
+.borderLeft {
+  border-left: 1px solid var(--teal-light);
+}
+
+.link-icon{
+/* .link-icon:hover { */
+	color: #fff;
+	background-color: var(--teal-dark);
+	margin: 0;
+}
+
+/* TODO */
+.link-icon:hover {
+	color: var(--grey);
+}
+
+.icon-image {
+  background-color: var(--teal-dark);
+}
+
+.icon:hover .icon-image {
+  background-color: var(--teal-light);
+}
+/* /Utils */
 
 /* Components */
 /* Top Nav*/
@@ -49,7 +96,7 @@ nav.navbar .dropdown-menu {
 }
 
 nav.navbar .dropdown-menu a {
-	padding: 1rem 3rem;
+  padding: 1rem 3rem;
 }
 
 .navbar .navbar-nav > li > a:hover,
@@ -72,11 +119,36 @@ nav.navbar .dropdown-menu a {
 /* /KB Search */
 
 /* Main content */
-.icon-image {
-  background-color: var(--teal-dark);
+/* /Main content */
+
+/* Footers */
+
+footer,
+footer a,
+footer a:hover {
+  color: #fff;
+  padding: 1rem 2rem;
+  line-height: 2rem;
 }
 
-.icon:hover .icon-image {
-  background-color: var(--teal-light);
+footer ul {
+  list-style-type: none;
 }
-/* /Main content */
+
+footer.student {
+  background-color: var(--teal-dark);
+  padding: 0 24px;
+}
+
+footer .link:hover {
+	background-color: var(--teal-dark);
+}
+/* footer .link:hover .link-icon, footer .link:active .link-icon, footer .link:focus .link-icon */
+footer .link:hover .link-icon {
+  filter: none;
+}
+
+footer.globalFooter {
+  background-color: var(--purple);
+}
+/* /Footers */
