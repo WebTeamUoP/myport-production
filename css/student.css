@@ -58,7 +58,6 @@ input {
 }
 
 .container>.flexContainer>.flexItem {
-
   flex-grow: 1;
   padding: 24px 15px;
 }
@@ -67,29 +66,11 @@ input {
   border-left: 1px solid var(--teal-light);
 }
 
-.link-icon{
-/* .link-icon:hover { */
-	color: #fff;
-	background-color: var(--teal-dark);
-	margin: 0;
-}
-
-/* TODO */
-.link-icon:hover {
-	color: var(--grey);
-}
-
-.icon-image {
-  background-color: var(--teal-dark);
-}
-
-.icon:hover .icon-image {
-  background-color: var(--teal-light);
-}
 /* /Utils */
 
 /* Components */
 /* Top Nav*/
+
 nav.navbar,
 nav.navbar .dropdown-menu {
   background-color: var(--teal-dark);
@@ -99,6 +80,7 @@ nav.navbar .dropdown-menu a {
   padding: 1rem 3rem;
 }
 
+.navbar .navbar-brand:hover,
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li > a:focus,
 .navbar .navbar-nav > .dropdown.open > a,
@@ -118,9 +100,6 @@ nav.navbar .dropdown-menu a {
 }
 /* /KB Search */
 
-/* Main content */
-/* /Main content */
-
 /* Footers */
 
 footer,
@@ -128,7 +107,30 @@ footer a,
 footer a:hover {
   color: #fff;
   padding: 1rem 2rem;
-  line-height: 2rem;
+}
+
+footer .flexContainer a {
+	padding: 1rem;
+}
+
+footer li {
+  padding: 1rem 2rem;
+}
+
+footer .link-icon{
+	color: #fff;
+	background-color: var(--teal-dark);
+	margin: 0;
+}
+
+footer .link:hover {
+	background-color: var(--teal-dark);
+}
+
+footer .link:hover .link-icon,
+footer .link:active .link-icon,
+footer .link:focus .link-icon {
+  filter: none;
 }
 
 footer ul {
@@ -140,15 +142,20 @@ footer.student {
   padding: 0 24px;
 }
 
-footer .link:hover {
-	background-color: var(--teal-dark);
-}
-/* footer .link:hover .link-icon, footer .link:active .link-icon, footer .link:focus .link-icon */
-footer .link:hover .link-icon {
-  filter: none;
-}
-
 footer.globalFooter {
   background-color: var(--purple);
 }
 /* /Footers */
+
+/* SVG images */
+.link--instagram .link-icon {
+  mask-image: url("/images/icons/instagram.svg");
+  background-color: #fff;
+  scale: 1.5;
+}
+
+.link--linkedin .link-icon {
+  mask-image: url("/images/icons/linkedin.svg");
+  background-color: #fff;
+  scale: 1.5;
+}
