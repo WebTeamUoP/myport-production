@@ -149,13 +149,11 @@ footer.globalFooter {
 
 /* SVG images */
 .link--instagram .link-icon {
-  mask-image: url("/images/icons/instagram.svg");
-  background-color: #fff;
-  scale: 1.5;
+  background-image: url("/images/icons/instagram.svg");
+  transform: scale(1.5);
 }
 
 .link--linkedin .link-icon {
-  mask-image: url("/images/icons/linkedin.svg");
-  background-color: #fff;
-  scale: 1.5;
+  background-image: url("/images/icons/linkedin.svg");
+  transform: scale(1.5);
 }
