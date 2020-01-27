@@ -26,7 +26,7 @@
 /* Elements */
 body {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 15px;
 }
 
 h1,
@@ -78,6 +78,11 @@ nav.navbar .dropdown-menu {
 
 nav.navbar .dropdown-menu a {
   padding: 1rem 3rem;
+}
+
+.navbar .navbar-nav > li > a {
+  font-weight: 600;
+  font-size: 13px;
 }
 
 .navbar .navbar-brand:hover,
