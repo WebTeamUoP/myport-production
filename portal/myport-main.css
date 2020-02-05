@@ -1,0 +1,316 @@
+:root {
+	--primary-light: #009a96;
+	--primary-dark: #007370;
+	--active-item: #0078b4
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	font-size: 16px;
+}
+
+.logo {
+	background-position: 40% center;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-image: url("/css/images/logo/uop-logo-up.png");
+}
+
+.logo-white {
+	background-image: url("/css/images/logo/uop-logo-white-up.png");
+	background-image: url("/css/images/logo/uop-logo-white-up.svg"), none;
+}
+
+.long-text {
+	word-wrap: break-word;
+}
+
+.no-wrap {
+	white-space: nowrap
+}
+
+.hide-example-box {
+	display: none;
+}
+
+.show-example-box {
+	display: inline-block;
+	padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.bold-text {
+	font-weight: 700;
+}
+
+.row-sep {
+	border-top: 1px dashed lightgray;
+	padding: 5px 0 0 0;
+}
+
+footer {
+	background-color: #333333;
+	padding: 24px;
+}
+
+footer .logo {
+	display: block;
+	width: 100%;
+	height: 95px;
+	background-size: 100%;
+}
+
+footer .logo, footer .copyright {
+	max-width: 260px;
+}
+
+footer .copyright {
+	max-width: 260px;
+	display: block;
+	margin: 0;
+	font-size: .85em;
+	text-align: center;
+	color: gray;
+}
+
+footer .links {
+	padding: 1.5em 0;
+}
+
+footer .link:hover {
+	color: #d9d9d9;
+}
+
+footer .link {
+	text-align: left;
+	line-height: 32px;
+	font-size: 16px;
+}
+
+footer .link:hover, footer .link:active, footer .link:focus {
+	background-color: #ffffff;
+	color: #333333;
+	border-radius: 4px !important;
+}
+
+footer .link:hover .link-icon, footer .link:active .link-icon, footer .link:focus .link-icon
+	{
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
+footer .link-icon {
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-right: .5em;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+footer .link--twitter .link-icon {
+	background-image: url("/css/images/icons/twitter.png");
+}
+
+footer .link--facebook .link-icon {
+	background-image: url("/css/images/icons/facebook.png");
+}
+
+footer .link--vimeo .link-icon {
+	background-image: url("/css/images/icons/vimeo.png");
+}
+
+@media ( min-width : 992px) {
+	footer .links {
+		float: right;
+	}
+}
+
+/* Bootstrap - Overrides */
+.navbar-default, .navbar-nav>li>.dropdown-menu {
+	background-color: var(--primary-light);
+}
+
+.navbar-default .navbar-text, .navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-nav {
+	margin: 7.5px -15px 0px -15px;
+}
+
+@media ( min-width : 768px) {
+	.navbar-nav {
+		margin: 0;
+	}
+}
+
+@media ( max-width : 1199px) {
+	.navbar-header {
+		float: none;
+	}
+	.navbar-left, .navbar-right {
+		float: none !important;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	}
+	.navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+	.navbar-nav {
+		float: none !important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+		float: none;
+	}
+	.navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.collapse.in {
+		display: block !important;
+	}
+}
+
+.navbar .navbar-collapse {
+	border: 0;
+	box-shadow: none;
+}
+
+.navbar .navbar-brand {
+	width: 180px;
+	height: 70px;
+}
+
+@media ( min-width : 992px) {
+	.navbar .navbar-brand {
+		width: 230px;
+	}
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+	color: #fff !important;
+	line-height: 52px;
+	padding: 10px 15px;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	color: #fff !important;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,
+	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>.active>a:hover,
+	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.open>a,
+	.navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover,
+	.navbar .navbar-toggle, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+	color: #fff;
+	background-color: var(--primary-dark);
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
+	color: #fff;
+	background-color: var(--active-item);
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus,
+.ui-state-active {
+	background-color: var(--active-item) !important;
+}
+
+.dropdown-menu>.active>a:hover {
+	background-color: var(--primary-dark);
+}
+
+.panel-default>.panel-heading {
+	color: #fff;
+	background-color: var(--primary-light);
+}
+
+.panel, .panel-heading {
+	border-radius: 0;
+}
+
+.panel {
+	border-bottom-right-radius: 50px;
+}
+
+.collapsible-heading {
+	cursor: pointer;
+}
+
+.panel-heading.collapsible-heading:hover {
+	background-color: var(--primary-dark);
+}
+
+.panel-heading .collapsible-title:after {
+	font-family: 'Glyphicons Halflings';
+	content: "\e114";
+	color: inherit;
+	float: right;
+}
+
+.collapsed .collapsible-title:after {
+	content: "\e080" !important;
+}
+
+.info-panel {
+	background-color: #f5f5f5;
+	border-bottom-right-radius: 50px;
+}
+
+.feature-panel {
+	border: 5px solid #f7f7f7;
+	box-shadow: none;
+}
+
+.btn {
+	color: #fff;
+}
+
+.btn-portsmouth {
+	background: var(--primary-light);
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn-portsmouth.focus, .btn-portsmouth:focus, .btn-portsmouth:active,
+	.btn-portsmouth:hover {
+	background: var(--primary-dark);
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn-margin-left {
+	margin-left: 10px;
+}
+
+/* Rebranding */
+a.navbar-brand.active, .ui-button:active {
+	color: #fff;
+	background: var(--active-item);
+}
+
+.ui-widget-header, button.ui-state-default {
+	background: var(--primary-light);
+}
+
+button.ui-state-default:hover {
+	background: var(--primary-dark)
+}

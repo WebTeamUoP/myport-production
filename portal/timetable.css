@@ -1,0 +1,171 @@
+:root {
+	--primary-light: #009a96;
+	--primary-dark: #007370;
+	--active-item: #0078b4
+}
+
+.loader {
+	z-index:99;
+	position:absolute;
+	top:40%;
+	left:25%;
+	width:50%;
+	overflow:auto;
+}
+
+.cal-square {
+	border: 1px solid #000000;
+	width: 15px;
+	height: 15px;
+	margin-right: 4px;
+	display: inline-block;
+}
+
+.timetable-event {
+	  background: #59379e !important;
+	  border-color: #000000 !important;
+	  color: #ffffff !important;
+}
+
+.exam-event {
+	  background: #009999 !important;
+	  border-color: #000000 !important;
+	  color: #ffffff !important;
+}
+
+#datepicker {
+	position: absolute;
+	z-index: 10;
+}
+
+.mockui-button:not(:first-child) {
+	margin-left: -5px;
+}
+
+.mockui-button:hover {
+	background: var(--primary-dark) 50% 50% repeat-x;
+}
+
+.mockui-button {
+	height: 2.1em;
+	padding: 0 .6em;
+	background: var(--primary-light) 50% 50% repeat-x;
+    border: 1px solid #ddd;
+    color: #fff;
+}
+
+.mockui-btn {
+	border-radius: 0px;
+    border: 1px solid #ddd;
+}
+
+.calendar-div {
+    margin-bottom: 20px;
+}
+
+/* fullcalendar - Overrides */
+span.fc-time {
+	display: block !important;
+}
+
+span.fc-title {
+	display: block !important;
+}
+
+.fc-event .fc-bg {
+    display: none;
+}
+
+/* qtip2 - Overrides */
+.qtip {
+	max-width: 250px !important;
+}
+
+.qtip-titlebar {
+	padding: 5px 10px !important;
+}
+
+.qtip a {
+	text-decoration: underline;
+}
+
+/* glyphicon - Overrides */
+
+.glyphicon.fast-right-spinner {
+    -webkit-animation: glyphicon-spin-r 1s infinite linear;
+    animation: glyphicon-spin-r 1s infinite linear;
+}
+
+.glyphicon.normal-right-spinner {
+    -webkit-animation: glyphicon-spin-r 2s infinite linear;
+    animation: glyphicon-spin-r 2s infinite linear;
+}
+
+.glyphicon.slow-right-spinner {
+    -webkit-animation: glyphicon-spin-r 3s infinite linear;
+    animation: glyphicon-spin-r 3s infinite linear;
+}
+
+.glyphicon.fast-left-spinner {
+    -webkit-animation: glyphicon-spin-l 1s infinite linear;
+    animation: glyphicon-spin-l 1s infinite linear;
+}
+
+.glyphicon.normal-left-spinner {
+    -webkit-animation: glyphicon-spin-l 2s infinite linear;
+    animation: glyphicon-spin-l 2s infinite linear;
+}
+
+.glyphicon.slow-left-spinner {
+    -webkit-animation: glyphicon-spin-l 3s infinite linear;
+    animation: glyphicon-spin-l 3s infinite linear;
+}
+
+@-webkit-keyframes glyphicon-spin-r {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes glyphicon-spin-r {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes glyphicon-spin-l {
+    0% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes glyphicon-spin-l {
+    0% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
