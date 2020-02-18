@@ -119,7 +119,7 @@ footer .flexContainer a {
 }
 
 footer li {
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1rem 0;
 }
 
 footer .link-icon{
@@ -145,6 +145,18 @@ footer ul {
 footer.student {
   background-color: var(--teal-dark);
   padding: 0 24px;
+}
+
+footer.student .flexContainer {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+
+  justify-content: space-evenly;
+}
+
+footer.student .flexContainer ul {
+	padding-left: 0;
 }
 
 footer.globalFooter {
